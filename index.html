@@ -31,7 +31,7 @@ header .btn{padding:10px 16px;font-size:14px}
 @media(max-width:900px){nav{display:none}header .btn{margin-left:auto}.logo b{font-size:21px}.logo svg{width:38px;height:38px}}
 
 .hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 80% 40%,#1E2A38,#0B1118);min-height:min(86vh,740px);display:flex;align-items:center;overflow:hidden}
-.hero .hg{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center}.hero .vis{position:relative}.hero .vis .a{border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:16/10;background:#0B1118 url(img/prod1.jpg) center/cover}.hero .vis .b{position:absolute;left:-26px;bottom:-26px;width:40%;aspect-ratio:3/4;border-radius:16px;border:4px solid #0F1720;background:#222 url(img/v2_plant1.jpg) center/cover;box-shadow:0 20px 40px rgba(0,0,0,.45)}.hero .vis small{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);border-radius:99px;padding:5px 11px;font-size:12px;color:#ddd}
+.hero .hg{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center}.hero .vis{position:relative}.hero .vis .a{border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:16/10;background:#0B1118 url(img/prod1.jpg) center/cover}.hero .vis .b{position:absolute;left:-26px;bottom:-26px;width:40%;aspect-ratio:3/4;border-radius:16px;border:4px solid #0F1720;background:#222 url(img/up_plant1.jpg) center/cover;box-shadow:0 20px 40px rgba(0,0,0,.45)}.hero .vis small{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);border-radius:99px;padding:5px 11px;font-size:12px;color:#ddd}
 .hero .w{position:relative;width:100%;padding-block:80px}
 .hero .ey{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:7px 14px;font-size:14px;font-weight:700;margin-bottom:22px}.hero .ey i{width:8px;height:8px;border-radius:50%;background:var(--or);box-shadow:0 0 12px var(--or)}
 .hero h1{font-size:clamp(38px,5.4vw,68px);font-weight:900;max-width:12em}.hero h1 em{font-style:normal;color:var(--or2)}
@@ -162,22 +162,39 @@ footer{font-size:var(--t1);line-height:1.8}
 nav{font-size:var(--t1);gap:24px}
 .btn{font-size:var(--t2);padding:14px 24px}
 @media(max-width:760px){:root{--t2:16px;--t3:19px;--t4:32px}section{padding:64px 0}.cta{padding:32px 24px}.cta h2{font-size:26px}}
+
+/* v3 (11/19) */
+.hx{background:#0B1118 url(img/hero2.jpg) 70% center/cover!important;min-height:min(84vh,720px)!important}
+.hx:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,18,.96) 0%,rgba(8,12,18,.8) 38%,rgba(8,12,18,.1) 70%)}
+.hx .w{position:relative;padding-block:80px}.hx .cap{display:block;margin-top:26px;color:#8C9AAB;font-size:13px}
+@media(max-width:760px){.hx{background-position:78% center!important;align-items:flex-end}.hx:before{background:linear-gradient(0deg,rgba(8,12,18,.97) 45%,rgba(8,12,18,.3))}}
+.lang{display:flex;gap:2px;background:rgba(255,255,255,.08);border-radius:99px;padding:3px;margin-left:6px}.lang button{border:0;background:none;color:#B3C1D1;font:inherit;font-size:13px;font-weight:800;padding:5px 9px;border-radius:99px;cursor:pointer}.lang button.on{background:#fff;color:#0F1720}
+.pain{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.pain div{border:1px solid var(--ln);border-radius:18px;padding:24px;background:#fff}.pain q{display:block;quotes:none;font-weight:800;font-size:var(--t3);line-height:1.35;color:var(--ink)}.pain p{margin:12px 0 0;color:var(--mu);font-size:var(--t1)}.pain p b{color:var(--or)}
+@media(max-width:900px){.pain{grid-template-columns:1fr 1fr}}@media(max-width:560px){.pain{grid-template-columns:1fr}}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.apps figure{margin:0;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#111 center/cover}.apps figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 20px;background:linear-gradient(0deg,rgba(8,12,18,.9),transparent);color:#fff}.apps b{display:block;font-size:var(--t3)}.apps small{color:#C9D3DE;font-size:var(--t1)}
+@media(max-width:760px){.apps{grid-template-columns:1fr;}.apps figure{aspect-ratio:16/10}}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:16px}.who div{border-radius:20px;padding:32px;background:var(--ink);color:#fff}.who div:last-child{background:#1D2B3B}.who h3{font-size:var(--t3)}.who ul{margin:16px 0 24px;padding-left:20px;color:#C9D3DE}.who li{margin:6px 0}
+@media(max-width:760px){.who{grid-template-columns:1fr}}
+.ceo{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:center}.ceo .ph{border-radius:22px;aspect-ratio:4/3;background:#111 url(img/up_plant1.jpg) center/cover}.ceo blockquote{margin:0;font-size:26px;font-weight:800;line-height:1.45;letter-spacing:-.02em}.ceo blockquote em{font-style:normal;color:var(--or)}.ceo p{color:var(--mu);margin:20px 0 0}.ceo .sg{margin-top:20px;font-weight:800}
+@media(max-width:860px){.ceo{grid-template-columns:1fr}.ceo blockquote{font-size:21px}}
+.gmap{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
+.aic{display:grid;gap:14px;max-width:640px;margin:0 auto}.aic .ch{gap:8px}.air{margin-top:6px;border-radius:16px;padding:18px 20px;background:#F5F7FA;display:none}.air.on{display:block}.air h4{margin:0 0 8px;font-size:19px}.air ul{margin:8px 0 0;padding-left:18px;color:var(--st)}.air .badge{display:inline-block;border-radius:99px;padding:4px 12px;font-weight:800;font-size:13px;margin-right:6px}
 </style></head><body>
 
 <div class="pb"><div class="w"><span>📌 <b>찰칵홈 리뉴얼 시안</b> · 삼흥테크(주)를 위해 무료로 만든 예시예요</span><button data-open="ba">지금 사이트와 비교 보기</button></div></div>
 
 <header><div class="w">
  <a class="logo" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="#FF9A4D" stroke-width="2.6"><circle cx="15" cy="15" r="9"/><circle cx="25" cy="15" r="9"/><circle cx="20" cy="24" r="9"/></g></svg><span><b>삼흥테크(주)</b><small>SAM HUNG TECH CO., LTD.</small></span></a>
- <nav><a href="#why">회사 소개</a><a href="#prod">제품</a><a href="#flow">공정</a><a href="#eq">설비</a><a href="#hist">연혁·인증</a><a href="#loc">오시는 길</a></nav>
- <button class="btn" data-open="q">견적 문의</button>
+ <nav><a href="#about">회사 소개</a><a href="#prod">제품</a><a href="#flow">공정</a><a href="#eq">설비</a><a href="#hist">연혁·인증</a><a href="#loc">오시는 길</a></nav>
+ <div class="lang" role="group" aria-label="언어"><button class="on" data-lg="ko">KO</button><button data-lg="en">EN</button><button data-lg="ja">日本語</button></div><button class="btn" data-open="q" data-t="nq">견적 문의</button>
 </div></header>
 
-<div class="hero" id="top"><div class="w"><div class="hg"><div>
- <span class="ey"><i></i>1988년부터 · 오직 알루미늄 중력주조</span>
- <h1>38년,<br><em>새지 않는</em><br>알루미늄 부품.</h1>
- <p>크랭크케이스·실린더블록·펌프바디처럼 새면 안 되는 부품을 금형·사형 중력주조로 만들고, 감압·수압 시험까지 직접 검사해 납품합니다.</p>
- <div class="row"><button class="btn" data-open="q">📐 도면으로 견적 받기</button><button class="btn g" data-open="prod">제품 보기</button></div>
- </div><div class="vis"><div class="a"></div><div class="b"></div><small>실제 생산 제품 · 실제 공장</small></div></div>
+<div class="hero hx" id="top"><div class="w">
+ <span class="ey" data-t="ey"><i></i>1988년부터 · 오직 알루미늄 중력주조</span>
+ <h1 data-t="h1">38년,<br><em>새지 않는</em><br>알루미늄 부품.</h1>
+ <p data-t="hp">크랭크케이스·실린더블록·펌프바디처럼 새면 안 되는 부품을 금형·사형 중력주조로 만들고, 감압·수압 시험까지 직접 검사해 납품합니다.</p>
+ <div class="row"><button class="btn" data-open="q" data-t="b1">📐 도면으로 견적 받기</button><button class="btn g" data-open="ai" data-t="b2">⚡ 30초 주조 가능성 체크</button></div>
+ <small class="cap" data-t="cap">사진: 삼흥테크가 실제 생산한 크랭크케이스</small>
 </div></div>
 
 <div class="kpi"><div class="w">
@@ -187,10 +204,29 @@ nav{font-size:var(--t1);gap:24px}
  <div><b>ISO</b><span>9001 품질경영시스템</span></div>
 </div></div>
 
+<section id="pain"><div class="w">
+ <div class="sh"><span class="k">FOR BUYERS</span><h2 data-t="ph">이런 부품이라면, 삼흥테크에 맡기세요</h2></div>
+ <div class="pain">
+  <div><q>"주조품에서 자꾸 새요"</q><p>기공 관리(GAS 처리) + <b>감압·수압 기밀 시험</b>을 거쳐 출하합니다.</p></div>
+  <div><q>"소량인데 금형비가 부담돼요"</q><p>시제품 · 소량은 <b>사형주조</b>로 금형비를 줄여 시작할 수 있어요.</p></div>
+  <div><q>"주조 · 가공 · 검사 따로 맡기기 번거로워요"</q><p>용해부터 쇼트, 검사까지 <b>한 공장에서</b> 끝냅니다.</p></div>
+  <div><q>"오래 믿고 맡길 곳이 필요해요"</q><p><b>1988년부터 38년</b>, 한 자리에서 알루미늄 중력주조만 해 왔습니다.</p></div>
+ </div>
+</div></section>
+
+<section class="alt" id="about"><div class="w"><div class="ceo">
+ <div class="ph" role="img" aria-label="삼흥테크 공장 내부"></div>
+ <div><span class="k">CEO MESSAGE</span>
+  <blockquote style="margin-top:12px">"쇳물은 거짓말을 하지 않습니다.<br>제대로 녹이고, 제대로 붓고,<br><em>끝까지 확인한 부품</em>만 내보냅니다."</blockquote>
+  <p>삼흥테크는 1988년 창업 이래 오직 알루미늄 중력주조 한 길을 걸어왔습니다. 자동차 · 엔진 · 지게차 · 압축기에 들어가는 부품을 만들며 쌓은 경험으로, 고객이 도면 한 장만 보내도 가장 알맞은 공법과 일정을 먼저 제안합니다. 앞으로도 좋은 품질로 고객과 함께 성장하겠습니다.</p>
+  <div class="sg">삼흥테크(주) 대표이사 배성문</div><small style="display:block;margin-top:6px;color:var(--mu);font-size:13px">※ 시안용 예시 문구예요 · 대표님 말씀으로 바꿔 드려요</small>
+ </div>
+</div></div></section>
+
 <section id="why"><div class="w">
  <div class="sh"><span class="k">WHY SAM HUNG</span><h2>주조부터 검사까지, 한 공장에서</h2><p>용해부터 주조, 절단·사상, 쇼트, 기밀 시험까지 모든 공정을 팔용동 공장에서 직접 합니다. 그래서 품질도 일정도 저희가 책임집니다.</p></div>
  <div class="why">
-  <div class="ph2"><div class="ph" style="background-image:url(img/v2_casting.jpg)"></div><div class="ph" style="background-image:url(img/v2_hydro.jpg)"></div></div>
+  <div class="ph2"><div class="ph" style="background-image:url(img/up_casting.jpg)"></div><div class="ph" style="background-image:url(img/up_hydro.jpg)"></div></div>
   <div class="wl">
    <div><b><i>💧</i>새지 않게, 검사로 증명</b><p>압축기·펌프용 부품은 작은 기공에도 샙니다. 감압 TEST기와 수압 TEST기로 기밀을 직접 확인합니다.</p></div>
    <div><b><i>⚙️</i>금형 · 사형 둘 다</b><p>수량이 많고 정밀하면 금형주조, 크거나 모양이 복잡하면 사형주조. 부품에 맞는 공법을 같이 골라 드립니다.</p></div>
@@ -206,6 +242,22 @@ nav{font-size:var(--t1);gap:24px}
  <p class="more">이 밖에도 <b>어댑터 · 베어링 하우징 · 피스톤 · 플레이트 커버 · 섬프 플레이트 · 브래킷 · 프레임</b> 등 30여 종을 생산합니다.</p>
 </div></section>
 
+<section id="apps"><div class="w">
+ <div class="sh"><span class="k">APPLICATIONS</span><h2 data-t="ah">삼흥테크 부품이 일하는 곳</h2><p>이런 장비 안에서, 새지 않고 오래 버팁니다. <small style="color:var(--mu)">(적용 예시 이미지)</small></p></div>
+ <div class="apps">
+  <figure style="background-image:url(img/app_comp.jpg)"><figcaption><b>❄️ 압축기</b><small>크랭크케이스 · 실린더블록</small></figcaption></figure>
+  <figure style="background-image:url(img/app_fork.jpg)"><figcaption><b>🏗 지게차 · 엔진</b><small>엔진용 하우징 · 커버</small></figcaption></figure>
+  <figure style="background-image:url(img/app_pump.jpg)"><figcaption><b>💧 펌프 · 유량계</b><small>펌프 바디 · 유량계 바디</small></figcaption></figure>
+ </div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <div class="who">
+  <div><span class="k">구매 · 조달 담당자</span><h3 style="margin-top:8px">단가와 납기가 먼저라면</h3><ul><li>도면만 보내면 공법 · 대략 일정부터 답변</li><li>소량 시제품 → 양산까지 한 곳에서</li><li>기밀 시험 성적까지 함께 관리</li></ul><button class="btn" data-open="q">📐 견적 문의</button></div>
+  <div><span class="k">개발 · 설계 엔지니어</span><h3 style="margin-top:8px">주조가 될지부터 궁금하다면</h3><ul><li>재질 · 중량 · 형상으로 주조 가능성 바로 체크</li><li>금형 vs 사형, 부품에 맞는 공법 제안</li><li>T6 열처리 · 후가공 · 기밀 요구 사항 협의</li></ul><button class="btn g" data-open="ai">⚡ 30초 주조 가능성 체크</button></div>
+ </div>
+</div></section>
+
 <section id="flow"><div class="w">
  <div class="sh"><span class="k">PROCESS</span><h2>한 공장 안에서 끝나는 8단계</h2><p>단계를 누르면 실제 공장 사진과 설비를 볼 수 있어요.</p></div>
  <div class="flow" id="fl"></div>
@@ -214,7 +266,7 @@ nav{font-size:var(--t1);gap:24px}
 <section class="alt"><div class="w">
  <div class="sh"><span class="k">METHOD</span><h2>금형주조와 사형주조, 어떤 게 맞을까요?</h2></div>
  <div class="cmp">
-  <div class="cm2"><div class="im" style="background-image:url(img/v2_pouring.jpg);background-position:center 30%"></div><div class="bd"><h3>금형(중력)주조</h3><ul><li>쇳물을 금속 금형에 중력으로 부어 굳힘</li><li>표면이 매끄럽고 치수가 일정</li><li>같은 부품을 반복 생산할 때 단가가 내려감</li></ul><div class="fit">👉 크랭크케이스 · 실린더블록 · 펌프바디처럼 정밀 · 양산 부품</div></div></div>
+  <div class="cm2"><div class="im" style="background-image:url(img/up_pouring.jpg);background-position:center 30%"></div><div class="bd"><h3>금형(중력)주조</h3><ul><li>쇳물을 금속 금형에 중력으로 부어 굳힘</li><li>표면이 매끄럽고 치수가 일정</li><li>같은 부품을 반복 생산할 때 단가가 내려감</li></ul><div class="fit">👉 크랭크케이스 · 실린더블록 · 펌프바디처럼 정밀 · 양산 부품</div></div></div>
   <div class="cm2"><div class="im" style="background-image:url(img/p_cover.jpg)"></div><div class="bd"><h3>사형주조</h3><ul><li>모래로 만든 틀에 쇳물을 부어 성형</li><li>큰 부품, 복잡한 모양도 가능</li><li>금형비 부담이 적어 소량 · 시제품에 유리</li></ul><div class="fit">👉 커버 · 대형 하우징 · 소량 · 개발 단계 부품</div></div></div>
  </div>
 </div></section>
@@ -257,9 +309,9 @@ nav{font-size:var(--t1);gap:24px}
 <section id="loc" style="padding-top:20px"><div class="w">
  <div class="sh"><span class="k">LOCATION</span><h2>오시는 길</h2></div>
  <div class="loc">
-  <div class="map mapv"><svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="600" height="300" fill="#1B2633"/><g stroke="#2B3A4A" stroke-width="10" fill="none"><path d="M-10 210 L620 150"/><path d="M120 -10 L200 320"/><path d="M380 -10 L330 320"/><path d="M-10 70 L620 40"/></g><g stroke="#33475C" stroke-width="4" fill="none"><path d="M-10 260 L620 230"/><path d="M60 -10 L90 320"/><path d="M480 -10 L520 320"/><path d="M-10 120 L620 100"/></g><text x="210" y="140" fill="#6F8399" font-size="15" font-family="sans-serif">팔용동 공단</text><text x="400" y="200" fill="#6F8399" font-size="13" font-family="sans-serif">창원대로</text></svg><span class="pin"><i></i><b>삼흥테크(주)</b><small>팔용동 41-18</small></span><a class="btn d" href="https://map.kakao.com/?q=%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%9D%98%EC%B0%BD%EA%B5%AC%20%ED%8C%94%EC%9A%A9%EB%8F%99%2041-18" target="_blank" rel="noopener">🗺 지도에서 보기</a></div>
+  <div class="map"><iframe class="gmap" title="삼흥테크 위치" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%82%BC%ED%9D%A5%ED%85%8C%ED%81%AC(%EC%A3%BC)%20%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%9D%98%EC%B0%BD%EA%B5%AC%20%ED%8C%94%EC%9A%A9%EB%8F%99%2041-18&z=16&output=embed"></iframe><a class="btn d" style="position:absolute;left:16px;bottom:16px;z-index:2" href="https://www.google.com/maps/search/?api=1&query=%EC%82%BC%ED%9D%A5%ED%85%8C%ED%81%AC%20%EC%B0%BD%EC%9B%90%20%ED%8C%94%EC%9A%A9%EB%8F%99%2041-18" target="_blank" rel="noopener">🗺 길찾기</a></div>
   <div class="lt">
-   <div><span>주소</span><b>경남 창원시 의창구 팔용동 41-18</b></div>
+   <div><span>주소</span><b>경남 창원시 의창구 죽전로82번길 39<br><small style="color:var(--mu);font-weight:500">(지번) 팔용동 41-18 · 팔용동 공단</small></b></div>
    <div><span>전화</span><b><a href="tel:0552993851">055-299-3851</a> ~ 2</b></div>
    <div><span>팩스</span><b>055-299-3853</b></div>
    <div><span>상담 시간</span><b>평일 09:00 ~ 18:00 · 토 09:00 ~ 13:00</b></div>
@@ -285,12 +337,12 @@ const P=[
 const S=[
  {n:'용해',d:'알루미늄 잉곳을 녹임',eq:'경동식 GAS로 350kg',img:'img/melting.jpg',t:'용해로'},
  {n:'가스 처리',d:'쇳물 속 수소 제거 → 기공 방지',eq:'GAS 처리장치 2대',img:'img/ingot.jpg',t:'잉곳 · 용탕 관리'},
- {n:'보온',d:'주조 온도를 일정하게',eq:'전기 보온로 8기',img:'img/v2_holding.jpg',t:'보온로 AL 500kg'},
- {n:'주조',d:'금형·사형에 중력으로 주입',eq:'주조기 8대',img:'img/v2_casting.jpg',t:'주조 작업'},
+ {n:'보온',d:'주조 온도를 일정하게',eq:'전기 보온로 8기',img:'img/up_holding.jpg',t:'보온로 AL 500kg'},
+ {n:'주조',d:'금형·사형에 중력으로 주입',eq:'주조기 8대',img:'img/up_casting.jpg',t:'주조 작업'},
  {n:'탈사 · 절단',d:'모래 제거, 탕구 절단',eq:'탈사기 3 · 절단기 5',img:'img/cutting.jpg',t:'절단 작업'},
  {n:'사상 · 쇼트',d:'표면 다듬기',eq:'SHOT기 2 · G.B.F 2',img:'img/shot.jpg',t:'SHOT기'},
- {n:'기밀 시험',d:'감압 · 수압으로 누설 검사',eq:'감압 · 수압 TEST기',img:'img/v2_hydro.jpg',t:'수압 TEST기',q:1},
- {n:'출하',d:'검사 완료품 포장 · 납품',eq:'공장 내 적재 · 출하',img:'img/v2_plant1.jpg',t:'공장 내부 전경'}];
+ {n:'기밀 시험',d:'감압 · 수압으로 누설 검사',eq:'감압 · 수압 TEST기',img:'img/up_hydro.jpg',t:'수압 TEST기',q:1},
+ {n:'출하',d:'검사 완료품 포장 · 납품',eq:'공장 내 적재 · 출하',img:'img/up_plant1.jpg',t:'공장 내부 전경'}];
 const EQ=[['보온로','전기로','500kg / 300kg / 250kg / 150kg','4 / 1 / 1 / 2'],['용해로','경동식 GAS로','350kg','1'],['GAS 처리장치','','','2'],['감압 TEST기','','','1'],['주조기','','','8'],['띠톱 절단기','','2HP','3'],['CUTTING M/C','','3HP / 1.5HP','1 / 1'],['탈사기','','','3'],['교반기','','','2'],['탁상선반','','DK-32','1'],['G.B.F기','','1200×900×300','2'],['MAGNETIC 드릴','','3HP','1'],['SHOT기','행거식','1200×1600×900','2'],['COMPRESSOR','','10HP','3'],['DRILL','','1.5HP','3'],['수압 TEST기','','1700×850×350','1'],['Ar 용접기','','','1']];
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 $('#pg').innerHTML=P.map(p=>`<button class="pc" data-c="${p.c}" data-open="p:${p.id}"><div class="im" style="background-image:url(${p.img})"></div><div class="tx"><span><b>${p.n}</b><small>${p.e}</small></span><span class="tg">${p.m}</span></div></button>`).join('');
@@ -302,9 +354,17 @@ const V={
  prod:()=>`<h3>제품</h3><p class="sub">누르면 크게 볼 수 있어요</p><div class="pg" style="grid-template-columns:repeat(3,1fr)">${P.map(p=>`<button class="pc" data-open="p:${p.id}"><div class="im" style="background-image:url(${p.img})"></div><div class="tx"><span><b>${p.n}</b><small>${p.e}</small></span></div></button>`).join('')}</div>`,
  p:id=>{const p=P.find(x=>x.id===id);return `<h3>${p.n} <small style="font-size:15px;color:var(--mu)">${p.e}</small></h3><p class="sub"><span class="tg" style="background:#FFF1E6;color:#B24A00;border-radius:99px;padding:4px 10px;font-weight:800;font-size:13px">${p.m}</span></p><div class="pdv"><div class="im" style="background-image:url(${p.img})"></div><div><ul>${p.u.map(x=>`<li>${x}</li>`).join('')}</ul><p style="color:var(--mu);font-size:14px">비슷한 부품이 필요하시면 도면을 보내 주세요. 주조 가능 여부부터 답해 드려요.</p><button class="btn" data-open="q">📐 이 부품처럼 견적 받기</button></div></div>`},
  s:i=>{const s=S[i];return `<h3>0${+i+1} · ${s.n}</h3><p class="sub">${s.d}</p><div class="stv"><div><img src="${s.img}" alt="${s.t}"><div class="ref">실제 공장 사진 (선명하게 복원) · ${s.t}</div></div><div><b>사용 설비</b><p>${s.eq}</p>${s.q?'<p style="background:#FFF8F2;border-radius:12px;padding:12px;color:#B24A00;font-weight:700">압축기 · 펌프 부품은 이 단계에서 누설 여부를 하나하나 확인한 뒤 출하합니다.</p>':''}<div style="display:flex;gap:8px;margin-top:14px">${+i>0?`<button class="btn d" data-open="s:${+i-1}">← 이전</button>`:''}${+i<S.length-1?`<button class="btn" data-open="s:${+i+1}">다음 단계 →</button>`:''}</div></div></div>`},
+ ai:()=>`<h3>⚡ 30초 주조 가능성 체크</h3><p class="sub">고르기만 하면 알맞은 공법과 확인할 점을 바로 알려 드려요. (참고용 · 정확한 판단은 도면 검토 후)</p><div class="aic">
+ <span class="ql">재질</span><div class="ch" data-a="mat"><button>AC4C (AlSi7Mg)</button><button>AC2B</button><button>AC4A</button><button>모름</button></div>
+ <span class="ql">개당 중량</span><div class="ch" data-a="w"><button data-v="1">1kg 이하</button><button data-v="2">1~5kg</button><button data-v="3">5~20kg</button><button data-v="4">20kg 이상</button></div>
+ <span class="ql">연간 수량</span><div class="ch" data-a="q"><button data-v="1">시제품 · 100개 이하</button><button data-v="2">100~1,000개</button><button data-v="3">1,000개 이상</button></div>
+ <span class="ql">요구 사항 (여러 개)</span><div class="ch" data-a="r" data-m="1"><button>새면 안 됨 (기밀)</button><button>강도 (열처리)</button><button>복잡한 내부 구멍</button><button>매끈한 표면</button></div>
+ <button class="btn" id="aigo" style="justify-content:center">결과 보기 →</button>
+ <div class="air" id="air"></div></div>`,
  eqall:()=>`<h3>전체 설비 목록</h3><p class="sub">2026년 기존 홈페이지 기준</p><table class="eqt"><tr><th>설비</th><th>특성</th><th>용량</th><th>대수</th></tr>${EQ.map(r=>`<tr>${r.map(c=>`<td>${c||'-'}</td>`).join('')}</tr>`).join('')}</table>`,
  ba:()=>`<h3>지금 홈페이지 vs 새 홈페이지</h3><p class="sub">거래처가 처음 검색해서 들어왔을 때 보는 화면이에요.</p><div class="ba"><figure><img src="img/before.jpg" alt="지금 홈페이지"><figcaption>지금 홈페이지</figcaption><ul class="bad"><li>주소창에 <b>"주의 요함"</b> 보안 경고</li><li>휴대폰에서 글씨가 작고 화면이 잘림</li><li>글자가 그림이라 <b>검색에 거의 안 잡힘</b></li><li>"25년 노하우" → 실제로는 38년</li></ul></figure><figure><img src="img/after.jpg" alt="새 홈페이지 시안"><figcaption>새 홈페이지 (이 시안)</figcaption><ul class="good"><li>휴대폰 · PC 모두 깔끔하게</li><li>제품을 카탈로그처럼 고급스럽게</li><li>공정 8단계 · 기밀 시험으로 신뢰</li><li>도면 첨부 견적이 바로 들어옴</li></ul></figure></div>
- <div class="offer"><b>이대로 쓰시려면</b><ul><li>회사 도메인 연결 + 보안(https) + 네이버 · 구글 검색 등록</li><li>제품 · 공장 사진 최신화 (찍어 주시면 다듬어 드려요)</li><li>원하시면 영문 페이지 (해외 거래처용)</li></ul><p style="margin:8px 0 0;font-size:13.5px;color:var(--mu)">찰칵홈 · 문의는 소개해 주신 분께 편하게 말씀해 주세요.</p></div>`,
+ <figure style="margin:18px 0 0"><img src="img/compare_m.jpg" alt="휴대폰 비교" style="border-radius:14px;border:1px solid var(--ln)"><figcaption style="font-weight:800;margin-top:8px">📱 거래처 대부분은 휴대폰으로 먼저 봐요</figcaption></figure>
+ <div class="offer"><b>이대로 쓰시려면</b><ul><li>회사 도메인 연결 + 보안(https) + 네이버 · 구글 검색 등록</li><li>제품 · 공장 사진 최신화 (찍어 주시면 다듬어 드려요)</li><li>영어 · 일본어 페이지 완성 (해외 거래처용 · 이 시안에 맛보기 포함)</li><li>AI 주조 가능성 체크 · 도면 견적 접수 → 담당자 휴대폰으로 바로 알림</li></ul><p style="margin:8px 0 0;font-size:13.5px;color:var(--mu)">찰칵홈 · 문의는 소개해 주신 분께 편하게 말씀해 주세요.</p></div>`,
  q:()=>{qd={kind:'',mat:'',w:'',vol:'',post:[],file:'',co:'',nm:'',tel:'',msg:''};return `<h3>📐 견적 문의</h3><p class="sub">3단계 · 1분이면 끝나요</p><div class="qs"><span class="on">1 부품</span><span>2 수량 · 도면</span><span>3 연락처</span></div>
  <div class="qp" data-q="1"><span class="ql">어떤 부품인가요?</span><div class="ch" data-k="kind"><button>압축기 · 엔진</button><button>펌프 · 밸브</button><button>하우징 · 커버</button><button>기타</button></div>
  <span class="ql">재질</span><div class="ch" data-k="mat"><button>AC4C</button><button>AC2B</button><button>AC4A</button><button>기타 · 모름</button></div>
@@ -333,4 +393,15 @@ function qwire(){const go=n=>{C.querySelectorAll('.qp').forEach(p=>p.hidden=+p.d
   try{const j=await (await fetch("https://script.google.com/macros/s/AKfycbz09Pualc3dVyOYhjRIBLY1lVpeZMpi8YMoUFlBcqWjJ30gKJagm0HAhio3rFaIf_E/exec",{method:"POST",body:JSON.stringify({op:"hpq",f:{kind:"🏭 견적 · 삼흥테크(시안)",name:co+' '+nm,contact:tel,msg}})})).json();if(j.error)throw 0;C.querySelector('#qno').textContent='접수번호 '+j.id;step=4;go(4)}
   catch(_){er.textContent='보내지 못했어요. 055-299-3851로 전화 주세요.';b.disabled=false;b.textContent='견적 요청 보내기 ✓'}}}
 </script>
+<script>(()=>{const A={};document.addEventListener('click',e=>{const b=e.target.closest('.aic .ch button');if(b){const g=b.parentElement,k=g.dataset.a;if(g.dataset.m){b.classList.toggle('on');A[k]=[...g.querySelectorAll('.on')].map(x=>x.textContent)}else{g.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));A[k]=b.dataset.v||b.textContent}return}
+ if(e.target.id!=='aigo')return;const R=document.getElementById('air');if(!A.w||!A.q){R.className='air on';R.innerHTML='<p style="margin:0;color:#C7372F">중량과 연간 수량을 골라 주세요</p>';return}
+ const w=+A.w,q=+A.q,r=A.r||[];let m,why;
+ if(q===1||w===4){m='사형주조';why=q===1?'소량 · 시제품이라 금형비 부담이 적은 사형주조가 유리해요.':'큰 부품이라 사형주조가 안정적이에요.'}else{m='금형(중력)주조';why='반복 생산이라 금형주조로 치수가 일정하고 단가가 내려가요.'}
+ if(r.includes('매끈한 표면')&&m==='사형주조')why+=' 표면이 중요하면 양산 단계에서 금형주조 전환도 검토해요.';
+ const chk=['도면(PDF · DWG · STEP)의 최소 두께와 빼기 구배 확인'];if(r.includes('새면 안 됨 (기밀)'))chk.push('GAS 처리 + 감압 · 수압 기밀 시험 조건 협의 (삼흥테크 보유 설비)');if(r.includes('강도 (열처리)'))chk.push('T6 열처리 가능 재질(AC4C 등) · 요구 강도 확인');if(r.includes('복잡한 내부 구멍'))chk.push('중자(코어) 설계 · 탈사 방법 검토');if(!A.mat||A.mat==='모름')chk.push('재질 미정 → 용도에 맞는 재질(AC4C 등) 함께 추천');
+ R.className='air on';R.innerHTML=`<span class="badge" style="background:#FFE2CC;color:#B24A00">추천 공법</span><h4 style="display:inline">${m}</h4><p style="margin:10px 0 0">${why}</p><ul>${chk.map(x=>`<li>${x}</li>`).join('')}</ul><div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button class="btn" data-open="q">📐 이 조건으로 견적 받기</button><a class="btn d" href="tel:0552993851">📞 바로 상담</a></div>`});})()</script>
+<script>(()=>{const T={en:{ey:'<i></i>Since 1988 · Aluminum gravity casting only',h1:'38 years of<br><em>leak-free</em><br>aluminum parts.',hp:'We gravity-cast crank cases, cylinder blocks and pump bodies in permanent molds and sand, and test every part for leaks (vacuum &amp; hydrostatic) before shipping.',b1:'📐 Get a quote from your drawing',b2:'⚡ 30-sec castability check',cap:'Photo: a crank case produced by Sam Hung Tech',nq:'Request quote',ph:'If your part is like this, trust Sam Hung Tech',ah:'Where our parts work'},
+ ja:{ey:'<i></i>1988年創業 · アルミ重力鋳造専門',h1:'38年、<br><em>漏れない</em><br>アルミ部品。',hp:'クランクケース・シリンダーブロック・ポンプボディを金型・砂型の重力鋳造で製造し、減圧・水圧の気密試験まで自社で検査して納品します。',b1:'📐 図面でお見積り',b2:'⚡ 30秒 鋳造可否チェック',cap:'写真：三興テック製クランクケース',nq:'お見積り',ph:'こんな部品なら、三興テックへ',ah:'三興テックの部品が働く場所'}};
+ const ko={};document.querySelectorAll('[data-t]').forEach(e=>ko[e.dataset.t]=e.innerHTML);
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-lg]');if(!b)return;const L=b.dataset.lg;document.querySelectorAll('[data-lg]').forEach(x=>x.classList.toggle('on',x===b));document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(el=>{const v=L==='ko'?ko[el.dataset.t]:T[L][el.dataset.t];if(v)el.innerHTML=v})});})()</script>
 </body></html>

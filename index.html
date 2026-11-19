@@ -189,6 +189,27 @@ html,body{overflow-x:clip}header{position:sticky!important;top:0;z-index:60}.eqc
 @media(max-width:700px){.bdt th:nth-child(1),.bdt td:nth-child(1),.bdt th:nth-child(3),.bdt td:nth-child(3){display:none}.bd2{padding:4px 14px 16px}}
 .cg2{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}.cc2{border:1px solid var(--ln);background:#fff;border-radius:16px;padding:12px;text-align:left;font:inherit;cursor:zoom-in}.cc2 span{display:block;aspect-ratio:3/4;background:#fff center/contain no-repeat;border-radius:8px;box-shadow:0 8px 20px rgba(20,40,90,.10);margin-bottom:12px}.cc2 b{display:block;font-size:var(--t2)}.cc2 small{color:var(--mu);font-size:var(--t1)}
 @media(max-width:760px){.cg2{grid-template-columns:1fr 1fr}.tl{grid-template-columns:1fr 1fr}}
+
+/* 부드러운 전환 (11/19) — 페이드만, 움직임 최소 */
+@keyframes fIn{from{opacity:0}to{opacity:1}}
+@keyframes mIn{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:none}}
+.md:not([hidden]){animation:fIn .22s ease both}.md:not([hidden]) .mb{animation:mIn .26s ease both}
+.md.out{opacity:0;transition:opacity .18s ease}
+#mc>*{animation:fIn .25s ease both}
+.pc:not([hidden]){animation:fIn .35s ease both}
+.bdt tbody tr{animation:fIn .3s ease both}
+.air.on{animation:fIn .3s ease both}
+.ch button,.pf button,.bt button,.lang button,.btn,.pc,.st,.cc2{transition:background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .25s ease,opacity .2s ease}
+.pc:hover,.st:hover,.cc2:hover{box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.btn:hover{filter:brightness(1.06)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* 스크롤 등장 (11/19, ticg 참고 · 더 차분하게) */
+.rv{opacity:0;transform:translateY(12px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.hx .w>*{opacity:0;animation:hIn .8s ease forwards}.hx .w>*:nth-child(1){animation-delay:.05s}.hx .w>*:nth-child(2){animation-delay:.18s}.hx .w>*:nth-child(3){animation-delay:.32s}.hx .w>*:nth-child(4){animation-delay:.46s}.hx .w>*:nth-child(5){animation-delay:.6s}
+@keyframes hIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}.hx .w>*{opacity:1!important}}
 </style></head><body>
 
 <div class="pb"><div class="w"><span>📌 <b>찰칵홈 리뉴얼 시안</b> · 삼흥테크(주)를 위해 무료로 만든 예시예요</span><button data-open="ba">지금 사이트와 비교 보기</button></div></div>
@@ -395,7 +416,7 @@ const V={
  <div class="qsum" id="qsum"></div><p class="qe" id="qe3"></p><div class="qb"><button class="btn bk" data-qn="2">← 이전</button><button class="btn" id="qgo">견적 요청 보내기 ✓</button></div></div>
  <div class="qp" data-q="4" hidden><div class="qd"><div class="ok">✓</div><b style="font-size:21px">견적 요청이 접수됐어요</b><p style="color:var(--mu);margin:0" id="qno"></p><p style="margin:0">담당자가 <b>1영업일 안에</b> 연락드려요.<br>도면은 아래 메일 안내에 따라 보내 주시면 돼요.</p><button class="btn d" data-close>닫기</button></div></div>`}};
 const open=k=>{const [a,b]=k.split(':');if(!V[a])return;C.innerHTML=V[a](b);M.hidden=false;document.body.style.overflow='hidden';M.querySelector('.mb').scrollTop=0;if(a==='q')qwire()};
-const close=()=>{M.hidden=true;document.body.style.overflow=''};
+const close=()=>{if(M.hidden)return;M.classList.add('out');setTimeout(()=>{M.hidden=true;M.classList.remove('out');document.body.style.overflow=''},180)};
 document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o){e.preventDefault();open(o.dataset.open);return}if(e.target.closest('[data-close]')||e.target===M)close()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!M.hidden)close()});
 function qwire(){const go=n=>{C.querySelectorAll('.qp').forEach(p=>p.hidden=+p.dataset.q!==n);C.querySelectorAll('.qs span').forEach((s,i)=>s.className=i+1===n?'on':i+1<n?'dn':'');C.querySelector('.qs').style.display=n===4?'none':'flex'};let step=1;
@@ -421,9 +442,14 @@ function qwire(){const go=n=>{C.querySelectorAll('.qp').forEach(p=>p.hidden=+p.d
 <script>(()=>{const T={en:{ey:'<i></i>Since 1988 · Aluminum gravity casting only',h1:'38 years of<br><em>leak-free</em><br>aluminum parts.',hp:'We gravity-cast crank cases, cylinder blocks and pump bodies in permanent molds and sand, and test every part for leaks (vacuum &amp; hydrostatic) before shipping.',b1:'📐 Get a quote from your drawing',b2:'⚡ 30-sec castability check',cap:'Photo: a crank case produced by Sam Hung Tech',nq:'Request quote',ph:'If your part is like this, trust Sam Hung Tech',ah:'Where our parts go'},
  ja:{ey:'<i></i>1988年創業 · アルミ重力鋳造専門',h1:'38年、<br><em>漏れない</em><br>アルミ部品。',hp:'クランクケース・シリンダーブロック・ポンプボディを金型・砂型の重力鋳造で製造し、減圧・水圧の気密試験まで自社で検査して納品します。',b1:'📐 図面でお見積り',b2:'⚡ 30秒 鋳造可否チェック',cap:'写真：三興テック製クランクケース',nq:'お見積り',ph:'こんな部品なら、三興テックへ',ah:'三興テックの部品が使われる場所'}};
  const ko={};document.querySelectorAll('[data-t]').forEach(e=>ko[e.dataset.t]=e.innerHTML);
- document.addEventListener('click',e=>{const b=e.target.closest('[data-lg]');if(!b)return;const L=b.dataset.lg;document.querySelectorAll('[data-lg]').forEach(x=>x.classList.toggle('on',x===b));document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(el=>{const v=L==='ko'?ko[el.dataset.t]:T[L][el.dataset.t];if(v)el.innerHTML=v})});})()</script>
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-lg]');if(!b)return;const L=b.dataset.lg;document.querySelectorAll('[data-lg]').forEach(x=>x.classList.toggle('on',x===b));document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(el=>{const v=L==='ko'?ko[el.dataset.t]:T[L][el.dataset.t];if(v){el.innerHTML=v;el.animate&&el.animate([{opacity:0},{opacity:1}],{duration:300,easing:'ease'})}})});})()</script>
 <script>(()=>{const B=document.getElementById('bdb'),E=B.innerHTML;const Q='<tr><td>12</td><td class="tt"><button data-lock>🔒 AC4C 재질 T6 열처리 가능 여부</button></td><td>최**</td><td>2025-06-02</td></tr><tr><td>11</td><td class="tt"><button data-lock>🔒 사형주조 최소 두께 문의</button></td><td>한**</td><td>2024-11-14</td></tr>',N='<tr><td>3</td><td class="tt"><button data-lock="0">📢 하계 휴무 안내</button></td><td>관리자</td><td>2025-07-25</td></tr><tr><td>2</td><td class="tt"><button data-lock="0">📢 설 연휴 휴무 안내</button></td><td>관리자</td><td>2025-01-20</td></tr>';
 document.addEventListener('click',e=>{const t=e.target.closest('[data-bt]');if(t){document.querySelectorAll('[data-bt]').forEach(x=>x.classList.toggle('on',x===t));B.innerHTML=t.dataset.bt==='e'?E:t.dataset.bt==='q'?Q:N;return}
  const l=e.target.closest('[data-lock]');if(l){const M=document.getElementById('md'),C=document.getElementById('mc');C.innerHTML=l.dataset.lock==='0'?'<h3>📢 공지사항</h3><p class="sub">시안용 예시 공지예요.</p>':'<h3>🔒 비밀글이에요</h3><p class="sub">작성자와 담당자만 볼 수 있어요. 새 견적이 필요하시면 아래 버튼을 눌러 주세요.</p><button class="btn" data-open="q">📐 견적 문의하기</button>';M.hidden=false;document.body.style.overflow='hidden'}})})()</script>
 <script>document.addEventListener('click',e=>{const c=e.target.closest('[data-cert]');if(!c)return;const f=['cert_iso','cert_yu','cert_trade','cert_clean'][+c.dataset.cert];const M=document.getElementById('md'),C=document.getElementById('mc');C.innerHTML=`<h3>${c.querySelector('b').textContent}</h3><p class="sub">${c.querySelector('small').textContent}</p><img src="img/${f}.jpg" alt="" style="max-height:70vh;margin:0 auto;border:1px solid var(--ln);border-radius:8px">`;M.hidden=false;document.body.style.overflow='hidden'})</script>
+<script>(()=>{if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+const SEL='.kpi .w>div,section .sh,.pain>div,.ceo>*,.why .ph2,.wl>div,#pg .pc,.flow .st,.cm2,.eqc,.ind span,.apps figure,.who>div,.tl>div,.cg2 .cc2,.bd2,.cta,.loc>*';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+const go=()=>{const els=[...document.querySelectorAll(SEL)].filter(e=>!e.classList.contains('rv'));const grp=new Map();els.forEach(e=>{const p=e.parentElement;const i=grp.get(p)||0;grp.set(p,i+1);e.style.setProperty('--d',(Math.min(i,6)*0.07)+'s');e.classList.add('rv');const r=e.getBoundingClientRect();if(r.top<innerHeight*.92)requestAnimationFrame(()=>e.classList.add('in'));else io.observe(e)})};
+go();setTimeout(go,600);})()</script>
 </body></html>

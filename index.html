@@ -179,6 +179,7 @@ nav{font-size:var(--t1);gap:24px}
 @media(max-width:860px){.ceo{grid-template-columns:1fr}.ceo blockquote{font-size:21px}}
 .gmap{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.05)}
 .aic{display:grid;gap:14px;max-width:640px;margin:0 auto}.aic .ch{gap:8px}.air{margin-top:6px;border-radius:16px;padding:18px 20px;background:#F5F7FA;display:none}.air.on{display:block}.air h4{margin:0 0 8px;font-size:19px}.air ul{margin:8px 0 0;padding-left:18px;color:var(--st)}.air .badge{display:inline-block;border-radius:99px;padding:4px 12px;font-weight:800;font-size:13px;margin-right:6px}
+.st{padding:0!important;overflow:hidden;display:flex;flex-direction:column}.st .si{display:block;aspect-ratio:16/10;background:#1B2633 center/cover;filter:saturate(.85) contrast(1.05)}.st{position:relative}.st:before{position:absolute;left:12px;top:12px;z-index:2;background:rgba(15,23,32,.8);color:#FFB37A!important;border-radius:8px;padding:3px 8px;margin:0}.st b{margin-top:16px!important}.st b,.st small{margin-left:20px;margin-right:20px}.st .eq{margin:12px 20px 20px!important;align-self:flex-start}
 </style></head><body>
 
 <div class="pb"><div class="w"><span>📌 <b>찰칵홈 리뉴얼 시안</b> · 삼흥테크(주)를 위해 무료로 만든 예시예요</span><button data-open="ba">지금 사이트와 비교 보기</button></div></div>
@@ -346,7 +347,7 @@ const S=[
 const EQ=[['보온로','전기로','500kg / 300kg / 250kg / 150kg','4 / 1 / 1 / 2'],['용해로','경동식 GAS로','350kg','1'],['GAS 처리장치','','','2'],['감압 TEST기','','','1'],['주조기','','','8'],['띠톱 절단기','','2HP','3'],['CUTTING M/C','','3HP / 1.5HP','1 / 1'],['탈사기','','','3'],['교반기','','','2'],['탁상선반','','DK-32','1'],['G.B.F기','','1200×900×300','2'],['MAGNETIC 드릴','','3HP','1'],['SHOT기','행거식','1200×1600×900','2'],['COMPRESSOR','','10HP','3'],['DRILL','','1.5HP','3'],['수압 TEST기','','1700×850×350','1'],['Ar 용접기','','','1']];
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 $('#pg').innerHTML=P.map(p=>`<button class="pc" data-c="${p.c}" data-open="p:${p.id}"><div class="im" style="background-image:url(${p.img})"></div><div class="tx"><span><b>${p.n}</b><small>${p.e}</small></span><span class="tg">${p.m}</span></div></button>`).join('');
-$('#fl').innerHTML=S.map((s,i)=>`<button class="st${s.q?' q':''}" data-open="s:${i}"><b>${s.n}</b><small>${s.d}</small><span class="eq">${s.eq}</span></button>`).join('');
+$('#fl').innerHTML=S.map((s,i)=>`<button class="st${s.q?' q':''}" data-open="s:${i}"><span class="si" style="background-image:url(${s.img})"></span><b>${s.n}</b><small>${s.d}</small><span class="eq">${s.eq}</span></button>`).join('');
 document.addEventListener('click',e=>{const f=e.target.closest('[data-pf]');if(!f)return;document.querySelectorAll('[data-pf]').forEach(x=>x.classList.toggle('on',x===f));document.querySelectorAll('.pc').forEach(c=>c.hidden=f.dataset.pf!=='all'&&c.dataset.c!==f.dataset.pf)});
 
 const M=$('#md'),C=$('#mc');let qd={};

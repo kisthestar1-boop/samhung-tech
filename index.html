@@ -24,14 +24,14 @@ section{padding:90px 0}
 .pb b{color:#B24A00}.pb button{border:0;background:var(--or);color:#fff;font:inherit;font-weight:800;border-radius:99px;padding:6px 14px;cursor:pointer}
 
 header{position:sticky;top:0;z-index:40;background:rgba(15,23,32,.92);backdrop-filter:blur(8px);color:#fff}
-header .w{display:flex;align-items:center;gap:24px;height:68px}
-.logo{display:flex;align-items:center;gap:10px}.logo svg{width:36px;height:36px}.logo b{font-size:19px;display:block;line-height:1.1}.logo small{font-size:10.5px;letter-spacing:.12em;opacity:.65}
+header .w{display:flex;align-items:center;gap:24px;height:78px}
+.logo{display:flex;align-items:center;gap:12px}.logo svg{width:46px;height:46px}.logo b{font-size:25px;font-weight:900;display:block;line-height:1.05;letter-spacing:-.02em}.logo small{font-size:11.5px;letter-spacing:.14em;opacity:.7}
 nav{margin-left:auto;display:flex;gap:22px;font-size:15px;font-weight:600}nav a{opacity:.85}nav a:hover{opacity:1;color:var(--or2)}
 header .btn{padding:10px 16px;font-size:14px}
-@media(max-width:900px){nav{display:none}header .btn{margin-left:auto}}
+@media(max-width:900px){nav{display:none}header .btn{margin-left:auto}.logo b{font-size:21px}.logo svg{width:38px;height:38px}}
 
 .hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 80% 40%,#1E2A38,#0B1118);min-height:min(86vh,740px);display:flex;align-items:center;overflow:hidden}
-.hero .hg{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center}.hero .vis{position:relative}.hero .vis .a{border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:16/10;background:#0B1118 url(img/prod1.jpg) center/cover}.hero .vis .b{position:absolute;left:-26px;bottom:-26px;width:40%;aspect-ratio:3/4;border-radius:16px;border:4px solid #0F1720;background:#222 url(img/up_plant1.jpg) center/cover;box-shadow:0 20px 40px rgba(0,0,0,.45)}.hero .vis small{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);border-radius:99px;padding:5px 11px;font-size:12px;color:#ddd}
+.hero .hg{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center}.hero .vis{position:relative}.hero .vis .a{border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);aspect-ratio:16/10;background:#0B1118 url(img/prod1.jpg) center/cover}.hero .vis .b{position:absolute;left:-26px;bottom:-26px;width:40%;aspect-ratio:3/4;border-radius:16px;border:4px solid #0F1720;background:#222 url(img/v2_plant1.jpg) center/cover;box-shadow:0 20px 40px rgba(0,0,0,.45)}.hero .vis small{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);border-radius:99px;padding:5px 11px;font-size:12px;color:#ddd}
 .hero .w{position:relative;width:100%;padding-block:80px}
 .hero .ey{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:7px 14px;font-size:14px;font-weight:700;margin-bottom:22px}.hero .ey i{width:8px;height:8px;border-radius:50%;background:var(--or);box-shadow:0 0 12px var(--or)}
 .hero h1{font-size:clamp(38px,5.4vw,68px);font-weight:900;max-width:12em}.hero h1 em{font-style:normal;color:var(--or2)}
@@ -47,7 +47,7 @@ header .btn{padding:10px 16px;font-size:14px}
 /* 강점 */
 .why{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:stretch}
 .why .ph{border-radius:22px;overflow:hidden;min-height:420px;background:#111 center/cover}
-.ph2{display:grid;gap:12px;grid-template-columns:1fr 1fr}.ph2 .ph{min-height:200px}
+.ph2{display:grid;gap:12px;grid-template-columns:1fr 1fr}.ph2 .ph,.cm2 .im,.stv img,.hero .vis .b{filter:saturate(.85) contrast(1.06) brightness(1.02)}.ph2 .ph{position:relative}.ph2 .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(15,23,32,.55));border-radius:inherit}.ph2 .ph{min-height:200px}
 .wl{display:grid;gap:14px}.wl div{border:1px solid var(--ln);border-radius:18px;padding:22px 22px 20px;background:#fff}
 .wl b{display:flex;gap:10px;align-items:center;font-size:19px}.wl b i{font-style:normal;width:34px;height:34px;border-radius:10px;background:#FFF1E6;display:grid;place-items:center;font-size:17px}
 .wl p{margin:8px 0 0;color:var(--mu)}
@@ -82,7 +82,7 @@ header .btn{padding:10px 16px;font-size:14px}
 
 /* 설비 */
 .eqg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.eqc{border:1px solid var(--ln);border-radius:16px;padding:18px;background:#fff}.eqc span{font-size:13px;color:var(--mu)}.eqc b{display:block;font-size:26px;font-weight:900}.eqc b small{font-size:14px;color:var(--mu);font-weight:700}.eqc p{margin:4px 0 0;font-size:14px;color:var(--st)}
+.eqc{border:1px solid var(--ln);border-radius:16px;padding:18px;background:#fff;position:relative}.eqc .ei{position:absolute;right:14px;top:14px;font-style:normal;width:38px;height:38px;border-radius:12px;background:#FFF1E6;display:grid;place-items:center;font-size:18px}.eqc span{font-size:13px;color:var(--mu)}.eqc b{display:block;font-size:26px;font-weight:900}.eqc b small{font-size:14px;color:var(--mu);font-weight:700}.eqc p{margin:4px 0 0;font-size:14px;color:var(--st)}
 .eqmore{margin-top:14px;border:0;background:none;color:var(--bl);font:inherit;font-weight:800;cursor:pointer;padding:0}
 @media(max-width:860px){.eqg{grid-template-columns:1fr 1fr}}
 
@@ -100,7 +100,7 @@ header .btn{padding:10px 16px;font-size:14px}
 @media(max-width:760px){.cta{grid-template-columns:1fr;padding:28px}.cta .row{justify-content:flex-start}}
 
 .loc{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
-.map{border-radius:20px;background:#E9EEF3 url(img/up_plant2.jpg) center/cover;min-height:300px;position:relative;overflow:hidden}.map a{position:absolute;left:16px;bottom:16px}
+.map{border-radius:20px;background:#1B2633;min-height:300px;position:relative;overflow:hidden}.mapv svg{position:absolute;inset:0;width:100%;height:100%}.pin{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);background:#fff;border-radius:14px;padding:10px 14px;box-shadow:0 14px 30px rgba(0,0,0,.35);text-align:center}.pin:after{content:"";position:absolute;left:50%;bottom:-8px;margin-left:-8px;border:8px solid transparent;border-top-color:#fff;border-bottom:0}.pin i{position:absolute;left:50%;bottom:-26px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 6px rgba(255,122,26,.25)}.pin b{display:block;font-size:15px}.pin small{color:var(--mu);font-size:12px}.map .btn{z-index:2}.map a{position:absolute;left:16px;bottom:16px}
 .lt{border:1px solid var(--ln);border-radius:20px;padding:8px 22px}.lt div{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--ln)}.lt div:last-child{border:0}.lt span{width:80px;flex:none;color:var(--mu);font-size:14.5px}.lt b{font-weight:700}
 @media(max-width:760px){.loc{grid-template-columns:1fr}}
 
@@ -138,6 +138,30 @@ footer{background:#0B1118;color:#8696A8;font-size:13.5px;padding:34px 0 90px}foo
 .ba ul{margin:0;padding-left:18px;font-size:14.5px}.ba .bad li{color:#B3261E}.ba .good li{color:#1E6B3A}
 .offer{margin-top:18px;background:#FFF8F2;border:1px solid #FFD9B8;border-radius:16px;padding:16px 18px}.offer b{font-size:16px}.offer ul{margin:8px 0 0;padding-left:18px;color:var(--st);font-size:14.5px}
 @media(max-width:760px){.ba{grid-template-columns:1fr}}
+
+/* 심미 규칙 (11/19 학습: 4단계 글자 · 8px 간격 · 60/30/10 색) */
+:root{--t1:15px;--t2:17px;--t3:21px;--t4:40px}
+body{font-size:var(--t2);line-height:1.6}
+h1,h2,h3{line-height:1.15}
+.k{font-size:var(--t1);letter-spacing:.14em}
+.sh{margin-bottom:48px}.sh h2{font-size:var(--t4)}.sh p{font-size:var(--t2);margin-top:16px}
+section{padding:96px 0}
+.hero p{font-size:var(--t3);line-height:1.55;max-width:28em}
+.kpi div{padding:32px 24px}.kpi b{font-size:var(--t4);line-height:1}.kpi b small{font-size:var(--t3)}.kpi span{font-size:var(--t1);color:#B3C1D1;display:block;margin-top:8px}
+.wl{gap:16px}.wl div{padding:24px}.wl b{font-size:var(--t3)}.wl p{font-size:var(--t2);margin-top:8px}
+.pc .tx{padding:16px}.pc b{font-size:var(--t3)}.pc small{font-size:var(--t1)}.pc .tg{font-size:var(--t1);padding:4px 12px}
+.more{font-size:var(--t2);margin-top:24px}
+.flow{gap:16px}.st{padding:24px}.st:before{font-size:var(--t1)}.st b{font-size:var(--t3);margin:8px 0 4px}.st small{font-size:var(--t1)}.st .eq{font-size:var(--t1);margin-top:16px;padding:4px 8px}
+.cmp{gap:24px}.cm2 .bd{padding:24px}.cm2 h3{font-size:var(--t3)}.cm2 ul{font-size:var(--t2)}.cm2 .fit{font-size:var(--t1);margin-top:16px;padding:8px 16px}
+.eqg{gap:16px}.eqc{padding:24px}.eqc span{font-size:var(--t1);color:var(--mu);font-weight:600}.eqc b{font-size:var(--t4);margin-top:8px;line-height:1.1}.eqc b small{font-size:var(--t2)}.eqc p{font-size:var(--t1);margin-top:8px;color:var(--mu)}
+.ind{gap:8px}.ind span{font-size:var(--t2);padding:16px 24px}
+.tl{gap:16px}.tl b{font-size:var(--t3)}.tl p{font-size:var(--t1)}.certs{gap:8px;margin-top:32px}.certs span{font-size:var(--t1);padding:8px 16px}
+.cta{padding:48px}.cta h2{font-size:32px}.cta p{font-size:var(--t2);margin-top:16px}
+.lt{padding:8px 24px}.lt div{padding:16px 0}.lt span{font-size:var(--t1);width:96px}.lt b{font-size:var(--t2)}
+footer{font-size:var(--t1);line-height:1.8}
+nav{font-size:var(--t1);gap:24px}
+.btn{font-size:var(--t2);padding:14px 24px}
+@media(max-width:760px){:root{--t2:16px;--t3:19px;--t4:32px}section{padding:64px 0}.cta{padding:32px 24px}.cta h2{font-size:26px}}
 </style></head><body>
 
 <div class="pb"><div class="w"><span>📌 <b>찰칵홈 리뉴얼 시안</b> · 삼흥테크(주)를 위해 무료로 만든 예시예요</span><button data-open="ba">지금 사이트와 비교 보기</button></div></div>
@@ -166,7 +190,7 @@ footer{background:#0B1118;color:#8696A8;font-size:13.5px;padding:34px 0 90px}foo
 <section id="why"><div class="w">
  <div class="sh"><span class="k">WHY SAM HUNG</span><h2>주조부터 검사까지, 한 공장에서</h2><p>용해부터 주조, 절단·사상, 쇼트, 기밀 시험까지 모든 공정을 팔용동 공장에서 직접 합니다. 그래서 품질도 일정도 저희가 책임집니다.</p></div>
  <div class="why">
-  <div class="ph2"><div class="ph" style="background-image:url(img/up_casting.jpg)"></div><div class="ph" style="background-image:url(img/up_hydro.jpg)"></div></div>
+  <div class="ph2"><div class="ph" style="background-image:url(img/v2_casting.jpg)"></div><div class="ph" style="background-image:url(img/v2_hydro.jpg)"></div></div>
   <div class="wl">
    <div><b><i>💧</i>새지 않게, 검사로 증명</b><p>압축기·펌프용 부품은 작은 기공에도 샙니다. 감압 TEST기와 수압 TEST기로 기밀을 직접 확인합니다.</p></div>
    <div><b><i>⚙️</i>금형 · 사형 둘 다</b><p>수량이 많고 정밀하면 금형주조, 크거나 모양이 복잡하면 사형주조. 부품에 맞는 공법을 같이 골라 드립니다.</p></div>
@@ -190,7 +214,7 @@ footer{background:#0B1118;color:#8696A8;font-size:13.5px;padding:34px 0 90px}foo
 <section class="alt"><div class="w">
  <div class="sh"><span class="k">METHOD</span><h2>금형주조와 사형주조, 어떤 게 맞을까요?</h2></div>
  <div class="cmp">
-  <div class="cm2"><div class="im" style="background-image:url(img/up_pouring.jpg);background-position:center 30%"></div><div class="bd"><h3>금형(중력)주조</h3><ul><li>쇳물을 금속 금형에 중력으로 부어 굳힘</li><li>표면이 매끄럽고 치수가 일정</li><li>같은 부품을 반복 생산할 때 단가가 내려감</li></ul><div class="fit">👉 크랭크케이스 · 실린더블록 · 펌프바디처럼 정밀 · 양산 부품</div></div></div>
+  <div class="cm2"><div class="im" style="background-image:url(img/v2_pouring.jpg);background-position:center 30%"></div><div class="bd"><h3>금형(중력)주조</h3><ul><li>쇳물을 금속 금형에 중력으로 부어 굳힘</li><li>표면이 매끄럽고 치수가 일정</li><li>같은 부품을 반복 생산할 때 단가가 내려감</li></ul><div class="fit">👉 크랭크케이스 · 실린더블록 · 펌프바디처럼 정밀 · 양산 부품</div></div></div>
   <div class="cm2"><div class="im" style="background-image:url(img/p_cover.jpg)"></div><div class="bd"><h3>사형주조</h3><ul><li>모래로 만든 틀에 쇳물을 부어 성형</li><li>큰 부품, 복잡한 모양도 가능</li><li>금형비 부담이 적어 소량 · 시제품에 유리</li></ul><div class="fit">👉 커버 · 대형 하우징 · 소량 · 개발 단계 부품</div></div></div>
  </div>
 </div></section>
@@ -198,14 +222,14 @@ footer{background:#0B1118;color:#8696A8;font-size:13.5px;padding:34px 0 90px}foo
 <section id="eq"><div class="w">
  <div class="sh"><span class="k">FACILITIES</span><h2>설비 현황</h2></div>
  <div class="eqg">
-  <div class="eqc"><span>주조기</span><b>8<small> 대</small></b><p>금형 중력주조</p></div>
-  <div class="eqc"><span>보온로 (전기로)</span><b>8<small> 기</small></b><p>150 ~ 500kg</p></div>
-  <div class="eqc"><span>용해로 (경동식 GAS)</span><b>350<small> kg</small></b><p>GAS 처리장치 2대</p></div>
-  <div class="eqc"><span>기밀 시험</span><b>2<small> 종</small></b><p>감압 · 수압 TEST기</p></div>
-  <div class="eqc"><span>절단</span><b>5<small> 대</small></b><p>띠톱 3 · CUTTING M/C 2</p></div>
-  <div class="eqc"><span>SHOT기 (행거식)</span><b>2<small> 대</small></b><p>1200×1600×900</p></div>
-  <div class="eqc"><span>탈사기 · 교반기</span><b>5<small> 대</small></b><p>사형주조 라인</p></div>
-  <div class="eqc"><span>가공 · 보조</span><b>11<small> 대</small></b><p>선반 · 드릴 · 용접 · 컴프레서</p></div>
+  <div class="eqc"><em class="ei">⚙️</em><span>주조기</span><b>8<small> 대</small></b><p>금형 중력주조</p></div>
+  <div class="eqc"><em class="ei">🔥</em><span>보온로 (전기로)</span><b>8<small> 기</small></b><p>150 ~ 500kg</p></div>
+  <div class="eqc"><em class="ei">🫕</em><span>용해로 (경동식 GAS)</span><b>350<small> kg</small></b><p>GAS 처리장치 2대</p></div>
+  <div class="eqc"><em class="ei">💧</em><span>기밀 시험</span><b>2<small> 종</small></b><p>감압 · 수압 TEST기</p></div>
+  <div class="eqc"><em class="ei">🪚</em><span>절단</span><b>5<small> 대</small></b><p>띠톱 3 · CUTTING M/C 2</p></div>
+  <div class="eqc"><em class="ei">✨</em><span>SHOT기 (행거식)</span><b>2<small> 대</small></b><p>1200×1600×900</p></div>
+  <div class="eqc"><em class="ei">⛏️</em><span>탈사기 · 교반기</span><b>5<small> 대</small></b><p>사형주조 라인</p></div>
+  <div class="eqc"><em class="ei">🔧</em><span>가공 · 보조</span><b>11<small> 대</small></b><p>선반 · 드릴 · 용접 · 컴프레서</p></div>
  </div>
  <button class="eqmore" data-open="eqall">전체 설비 목록 보기 →</button>
  <div class="sh" style="margin:56px 0 18px"><span class="k">INDUSTRIES</span><h2 style="font-size:28px">이런 곳에 들어갑니다</h2></div>
@@ -233,7 +257,7 @@ footer{background:#0B1118;color:#8696A8;font-size:13.5px;padding:34px 0 90px}foo
 <section id="loc" style="padding-top:20px"><div class="w">
  <div class="sh"><span class="k">LOCATION</span><h2>오시는 길</h2></div>
  <div class="loc">
-  <div class="map"><a class="btn d" href="https://map.kakao.com/?q=%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%9D%98%EC%B0%BD%EA%B5%AC%20%ED%8C%94%EC%9A%A9%EB%8F%99%2041-18" target="_blank" rel="noopener">🗺 지도에서 보기</a></div>
+  <div class="map mapv"><svg viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="600" height="300" fill="#1B2633"/><g stroke="#2B3A4A" stroke-width="10" fill="none"><path d="M-10 210 L620 150"/><path d="M120 -10 L200 320"/><path d="M380 -10 L330 320"/><path d="M-10 70 L620 40"/></g><g stroke="#33475C" stroke-width="4" fill="none"><path d="M-10 260 L620 230"/><path d="M60 -10 L90 320"/><path d="M480 -10 L520 320"/><path d="M-10 120 L620 100"/></g><text x="210" y="140" fill="#6F8399" font-size="15" font-family="sans-serif">팔용동 공단</text><text x="400" y="200" fill="#6F8399" font-size="13" font-family="sans-serif">창원대로</text></svg><span class="pin"><i></i><b>삼흥테크(주)</b><small>팔용동 41-18</small></span><a class="btn d" href="https://map.kakao.com/?q=%EC%B0%BD%EC%9B%90%EC%8B%9C%20%EC%9D%98%EC%B0%BD%EA%B5%AC%20%ED%8C%94%EC%9A%A9%EB%8F%99%2041-18" target="_blank" rel="noopener">🗺 지도에서 보기</a></div>
   <div class="lt">
    <div><span>주소</span><b>경남 창원시 의창구 팔용동 41-18</b></div>
    <div><span>전화</span><b><a href="tel:0552993851">055-299-3851</a> ~ 2</b></div>
@@ -261,12 +285,12 @@ const P=[
 const S=[
  {n:'용해',d:'알루미늄 잉곳을 녹임',eq:'경동식 GAS로 350kg',img:'img/melting.jpg',t:'용해로'},
  {n:'가스 처리',d:'쇳물 속 수소 제거 → 기공 방지',eq:'GAS 처리장치 2대',img:'img/ingot.jpg',t:'잉곳 · 용탕 관리'},
- {n:'보온',d:'주조 온도를 일정하게',eq:'전기 보온로 8기',img:'img/up_holding.jpg',t:'보온로 AL 500kg'},
- {n:'주조',d:'금형·사형에 중력으로 주입',eq:'주조기 8대',img:'img/up_casting.jpg',t:'주조 작업'},
+ {n:'보온',d:'주조 온도를 일정하게',eq:'전기 보온로 8기',img:'img/v2_holding.jpg',t:'보온로 AL 500kg'},
+ {n:'주조',d:'금형·사형에 중력으로 주입',eq:'주조기 8대',img:'img/v2_casting.jpg',t:'주조 작업'},
  {n:'탈사 · 절단',d:'모래 제거, 탕구 절단',eq:'탈사기 3 · 절단기 5',img:'img/cutting.jpg',t:'절단 작업'},
  {n:'사상 · 쇼트',d:'표면 다듬기',eq:'SHOT기 2 · G.B.F 2',img:'img/shot.jpg',t:'SHOT기'},
- {n:'기밀 시험',d:'감압 · 수압으로 누설 검사',eq:'감압 · 수압 TEST기',img:'img/up_hydro.jpg',t:'수압 TEST기',q:1},
- {n:'출하',d:'검사 완료품 포장 · 납품',eq:'공장 내 적재 · 출하',img:'img/up_plant1.jpg',t:'공장 내부 전경'}];
+ {n:'기밀 시험',d:'감압 · 수압으로 누설 검사',eq:'감압 · 수압 TEST기',img:'img/v2_hydro.jpg',t:'수압 TEST기',q:1},
+ {n:'출하',d:'검사 완료품 포장 · 납품',eq:'공장 내 적재 · 출하',img:'img/v2_plant1.jpg',t:'공장 내부 전경'}];
 const EQ=[['보온로','전기로','500kg / 300kg / 250kg / 150kg','4 / 1 / 1 / 2'],['용해로','경동식 GAS로','350kg','1'],['GAS 처리장치','','','2'],['감압 TEST기','','','1'],['주조기','','','8'],['띠톱 절단기','','2HP','3'],['CUTTING M/C','','3HP / 1.5HP','1 / 1'],['탈사기','','','3'],['교반기','','','2'],['탁상선반','','DK-32','1'],['G.B.F기','','1200×900×300','2'],['MAGNETIC 드릴','','3HP','1'],['SHOT기','행거식','1200×1600×900','2'],['COMPRESSOR','','10HP','3'],['DRILL','','1.5HP','3'],['수압 TEST기','','1700×850×350','1'],['Ar 용접기','','','1']];
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 $('#pg').innerHTML=P.map(p=>`<button class="pc" data-c="${p.c}" data-open="p:${p.id}"><div class="im" style="background-image:url(${p.img})"></div><div class="tx"><span><b>${p.n}</b><small>${p.e}</small></span><span class="tg">${p.m}</span></div></button>`).join('');

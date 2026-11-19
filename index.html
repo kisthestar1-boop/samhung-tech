@@ -171,7 +171,7 @@ nav{font-size:var(--t1);gap:24px}
 .lang{display:flex;gap:2px;background:rgba(255,255,255,.08);border-radius:99px;padding:3px;margin-left:6px}.lang button{border:0;background:none;color:#B3C1D1;font:inherit;font-size:13px;font-weight:800;padding:5px 9px;border-radius:99px;cursor:pointer}.lang button.on{background:#fff;color:#0F1720}
 .pain{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.pain div{border:1px solid var(--ln);border-radius:18px;padding:24px;background:#fff}.pain q{display:block;quotes:none;font-weight:800;font-size:var(--t3);line-height:1.35;color:var(--ink)}.pain p{margin:12px 0 0;color:var(--mu);font-size:var(--t1)}.pain p b{color:var(--or)}
 @media(max-width:900px){.pain{grid-template-columns:1fr 1fr}}@media(max-width:560px){.pain{grid-template-columns:1fr}}
-.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.apps figure{margin:0;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#111 center/cover}.apps figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 20px;background:linear-gradient(0deg,rgba(8,12,18,.9),transparent);color:#fff}.apps b{display:block;font-size:var(--t3)}.apps small{color:#C9D3DE;font-size:var(--t1)}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.apps figure{margin:0;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:4/3;background:#0B1118 center/cover}.apps figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 20px 20px;background:linear-gradient(0deg,rgba(8,12,18,.9),transparent);color:#fff}.apps b{display:block;font-size:var(--t3)}.apps small{color:#C9D3DE;font-size:var(--t1)}
 @media(max-width:760px){.apps{grid-template-columns:1fr;}.apps figure{aspect-ratio:16/10}}
 .who{display:grid;grid-template-columns:1fr 1fr;gap:16px}.who div{border-radius:20px;padding:32px;background:var(--ink);color:#fff}.who div:last-child{background:#1D2B3B}.who h3{font-size:var(--t3)}.who ul{margin:16px 0 24px;padding-left:20px;color:#C9D3DE}.who li{margin:6px 0}
 @media(max-width:760px){.who{grid-template-columns:1fr}}
@@ -244,11 +244,11 @@ nav{font-size:var(--t1);gap:24px}
 </div></section>
 
 <section id="apps"><div class="w">
- <div class="sh"><span class="k">APPLICATIONS</span><h2 data-t="ah">삼흥테크 부품이 일하는 곳</h2><p>이런 장비 안에서, 새지 않고 오래 버팁니다. <small style="color:var(--mu)">(적용 예시 이미지)</small></p></div>
+ <div class="sh"><span class="k">APPLICATIONS</span><h2 data-t="ah">삼흥테크 부품이 들어가는 곳</h2><p>실제로 만들어 온 부품과, 그 부품이 쓰이는 장비예요.</p></div>
  <div class="apps">
-  <figure style="background-image:url(img/app_comp.jpg)"><figcaption><b>❄️ 압축기</b><small>크랭크케이스 · 실린더블록</small></figcaption></figure>
-  <figure style="background-image:url(img/app_fork.jpg)"><figcaption><b>🏗 지게차 · 엔진</b><small>엔진용 하우징 · 커버</small></figcaption></figure>
-  <figure style="background-image:url(img/app_pump.jpg)"><figcaption><b>💧 펌프 · 유량계</b><small>펌프 바디 · 유량계 바디</small></figcaption></figure>
+  <figure style="background-image:url(img/p_crank.jpg)"><figcaption><b>❄️ 압축기</b><small>크랭크케이스 · 실린더블록</small></figcaption></figure>
+  <figure style="background-image:url(img/p_r4.jpg)"><figcaption><b>⚙️ 엔진 · 지게차</b><small>엔진용 케이스 · 커버</small></figcaption></figure>
+  <figure style="background-image:url(img/p_flow.jpg)"><figcaption><b>💧 펌프 · 유량계</b><small>펌프 바디 · 유량계 바디</small></figcaption></figure>
  </div>
 </div></section>
 
@@ -401,8 +401,8 @@ function qwire(){const go=n=>{C.querySelectorAll('.qp').forEach(p=>p.hidden=+p.d
  if(r.includes('매끈한 표면')&&m==='사형주조')why+=' 표면이 중요하면 양산 단계에서 금형주조 전환도 검토해요.';
  const chk=['도면(PDF · DWG · STEP)의 최소 두께와 빼기 구배 확인'];if(r.includes('새면 안 됨 (기밀)'))chk.push('GAS 처리 + 감압 · 수압 기밀 시험 조건 협의 (삼흥테크 보유 설비)');if(r.includes('강도 (열처리)'))chk.push('T6 열처리 가능 재질(AC4C 등) · 요구 강도 확인');if(r.includes('복잡한 내부 구멍'))chk.push('중자(코어) 설계 · 탈사 방법 검토');if(!A.mat||A.mat==='모름')chk.push('재질 미정 → 용도에 맞는 재질(AC4C 등) 함께 추천');
  R.className='air on';R.innerHTML=`<span class="badge" style="background:#FFE2CC;color:#B24A00">추천 공법</span><h4 style="display:inline">${m}</h4><p style="margin:10px 0 0">${why}</p><ul>${chk.map(x=>`<li>${x}</li>`).join('')}</ul><div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button class="btn" data-open="q">📐 이 조건으로 견적 받기</button><a class="btn d" href="tel:0552993851">📞 바로 상담</a></div>`});})()</script>
-<script>(()=>{const T={en:{ey:'<i></i>Since 1988 · Aluminum gravity casting only',h1:'38 years of<br><em>leak-free</em><br>aluminum parts.',hp:'We gravity-cast crank cases, cylinder blocks and pump bodies in permanent molds and sand, and test every part for leaks (vacuum &amp; hydrostatic) before shipping.',b1:'📐 Get a quote from your drawing',b2:'⚡ 30-sec castability check',cap:'Photo: a crank case produced by Sam Hung Tech',nq:'Request quote',ph:'If your part is like this, trust Sam Hung Tech',ah:'Where our parts work'},
- ja:{ey:'<i></i>1988年創業 · アルミ重力鋳造専門',h1:'38年、<br><em>漏れない</em><br>アルミ部品。',hp:'クランクケース・シリンダーブロック・ポンプボディを金型・砂型の重力鋳造で製造し、減圧・水圧の気密試験まで自社で検査して納品します。',b1:'📐 図面でお見積り',b2:'⚡ 30秒 鋳造可否チェック',cap:'写真：三興テック製クランクケース',nq:'お見積り',ph:'こんな部品なら、三興テックへ',ah:'三興テックの部品が働く場所'}};
+<script>(()=>{const T={en:{ey:'<i></i>Since 1988 · Aluminum gravity casting only',h1:'38 years of<br><em>leak-free</em><br>aluminum parts.',hp:'We gravity-cast crank cases, cylinder blocks and pump bodies in permanent molds and sand, and test every part for leaks (vacuum &amp; hydrostatic) before shipping.',b1:'📐 Get a quote from your drawing',b2:'⚡ 30-sec castability check',cap:'Photo: a crank case produced by Sam Hung Tech',nq:'Request quote',ph:'If your part is like this, trust Sam Hung Tech',ah:'Where our parts go'},
+ ja:{ey:'<i></i>1988年創業 · アルミ重力鋳造専門',h1:'38年、<br><em>漏れない</em><br>アルミ部品。',hp:'クランクケース・シリンダーブロック・ポンプボディを金型・砂型の重力鋳造で製造し、減圧・水圧の気密試験まで自社で検査して納品します。',b1:'📐 図面でお見積り',b2:'⚡ 30秒 鋳造可否チェック',cap:'写真：三興テック製クランクケース',nq:'お見積り',ph:'こんな部品なら、三興テックへ',ah:'三興テックの部品が使われる場所'}};
  const ko={};document.querySelectorAll('[data-t]').forEach(e=>ko[e.dataset.t]=e.innerHTML);
  document.addEventListener('click',e=>{const b=e.target.closest('[data-lg]');if(!b)return;const L=b.dataset.lg;document.querySelectorAll('[data-lg]').forEach(x=>x.classList.toggle('on',x===b));document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(el=>{const v=L==='ko'?ko[el.dataset.t]:T[L][el.dataset.t];if(v)el.innerHTML=v})});})()</script>
 </body></html>

@@ -89,7 +89,7 @@ header .btn{padding:10px 16px;font-size:14px}
 .ind{display:flex;gap:10px;flex-wrap:wrap}.ind span{border:1px solid var(--ln);background:#fff;border-radius:14px;padding:14px 18px;font-weight:800;font-size:16px}
 
 /* 연혁 */
-.tl{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.tl div{border-top:3px solid var(--ink);padding-top:12px}.tl b{font-size:20px;font-weight:900}.tl p{margin:4px 0 0;font-size:14px;color:var(--mu)}.tl .h{border-color:var(--or)}
+.tl{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.tl div{border-top:3px solid var(--ink);padding-top:12px}.tl b{font-size:20px;font-weight:900}.tl p{margin:4px 0 0;font-size:14px;color:var(--mu)}.tl .h{border-color:var(--or)}
 .certs{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.certs span{background:var(--ink);color:#fff;border-radius:12px;padding:10px 14px;font-weight:700;font-size:14px}
 @media(max-width:860px){.tl{grid-template-columns:1fr 1fr}}
 
@@ -182,13 +182,20 @@ nav{font-size:var(--t1);gap:24px}
 .st{padding:0!important;overflow:hidden;display:flex;flex-direction:column}.st .si{display:block;aspect-ratio:16/10;background:#1B2633 center/cover;filter:saturate(.85) contrast(1.05)}.st{position:relative}.st:before{position:absolute;left:12px;top:12px;z-index:2;background:rgba(15,23,32,.8);color:#FFB37A!important;border-radius:8px;padding:3px 8px;margin:0}.st b{margin-top:16px!important}.st b,.st small{margin-left:20px;margin-right:20px}.st .eq{margin:12px 20px 20px!important;align-self:flex-start}
 @media(max-width:600px){header .w{gap:10px;height:64px}.logo b{font-size:20px;white-space:nowrap}.logo small{display:none}.logo svg{width:32px;height:32px}.lang{margin-left:auto}.lang button{padding:4px 6px;font-size:12px}header .btn{display:none}}
 html,body{overflow-x:hidden}.eqc{padding-right:64px!important}.eqc span{display:block}
+.bd2{background:#fff;border:1px solid var(--ln);border-radius:20px;padding:8px 24px 20px}.bt{display:flex;gap:6px;padding:16px 0}.bt button{border:1px solid var(--ln);background:#fff;border-radius:99px;padding:7px 14px;font:inherit;font-size:var(--t1);font-weight:700;cursor:pointer}.bt button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bdt{width:100%;border-collapse:collapse;font-size:var(--t1)}.bdt th{text-align:left;color:var(--mu);font-weight:700;padding:12px 8px;border-bottom:2px solid var(--ink)}.bdt td{padding:14px 8px;border-bottom:1px solid var(--ln);color:var(--mu)}.bdt td:first-child{width:56px}.bdt td:nth-child(3){width:110px}.bdt td:last-child{width:110px}
+.bdt .tt button{border:0;background:none;font:inherit;color:var(--ink);font-weight:600;cursor:pointer;text-align:left;padding:0}.bdt .tt em{font-style:normal;font-size:12px;background:#E7F6EC;color:#1E8A4A;border-radius:99px;padding:2px 8px;margin-left:6px}
+.bdn{font-size:13px;color:var(--mu);margin:14px 0 0}
+@media(max-width:700px){.bdt th:nth-child(1),.bdt td:nth-child(1),.bdt th:nth-child(3),.bdt td:nth-child(3){display:none}.bd2{padding:4px 14px 16px}}
+.cg2{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}.cc2{border:1px solid var(--ln);background:#fff;border-radius:16px;padding:12px;text-align:left;font:inherit;cursor:zoom-in}.cc2 span{display:block;aspect-ratio:3/4;background:#fff center/contain no-repeat;border-radius:8px;box-shadow:0 8px 20px rgba(20,40,90,.10);margin-bottom:12px}.cc2 b{display:block;font-size:var(--t2)}.cc2 small{color:var(--mu);font-size:var(--t1)}
+@media(max-width:760px){.cg2{grid-template-columns:1fr 1fr}.tl{grid-template-columns:1fr 1fr}}
 </style></head><body>
 
 <div class="pb"><div class="w"><span>📌 <b>찰칵홈 리뉴얼 시안</b> · 삼흥테크(주)를 위해 무료로 만든 예시예요</span><button data-open="ba">지금 사이트와 비교 보기</button></div></div>
 
 <header><div class="w">
  <a class="logo" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="#FF9A4D" stroke-width="2.6"><circle cx="15" cy="15" r="9"/><circle cx="25" cy="15" r="9"/><circle cx="20" cy="24" r="9"/></g></svg><span><b>삼흥테크(주)</b><small>SAM HUNG TECH CO., LTD.</small></span></a>
- <nav><a href="#about">회사 소개</a><a href="#prod">제품</a><a href="#flow">공정</a><a href="#eq">설비</a><a href="#hist">연혁·인증</a><a href="#loc">오시는 길</a></nav>
+ <nav><a href="#about">회사 소개</a><a href="#board">견적 게시판</a><a href="#prod">제품</a><a href="#flow">공정</a><a href="#eq">설비</a><a href="#hist">연혁·인증</a><a href="#loc">오시는 길</a></nav>
  <div class="lang" role="group" aria-label="언어"><button class="on" data-lg="ko">KO</button><button data-lg="en">EN</button><button data-lg="ja">日本語</button></div><button class="btn" data-open="q" data-t="nq">견적 문의</button>
 </div></header>
 
@@ -204,7 +211,7 @@ html,body{overflow-x:hidden}.eqc{padding-right:64px!important}.eqc span{display:
  <div><b>1988</b><span>창업 · 창원 팔용동</span></div>
  <div><b>8<small>대</small></b><span>주조기 보유</span></div>
  <div><b>2<small>단계</small></b><span>감압 · 수압 기밀 시험</span></div>
- <div><b>ISO</b><span>9001 품질경영시스템</span></div>
+ <div><b>4<small>건</small></b><span>인증 · 지정 (ISO 9001 등)</span></div>
 </div></div>
 
 <section id="pain"><div class="w">
@@ -233,7 +240,7 @@ html,body{overflow-x:hidden}.eqc{padding-right:64px!important}.eqc span{display:
   <div class="wl">
    <div><b><i>💧</i>새지 않게, 검사로 증명</b><p>압축기·펌프용 부품은 작은 기공에도 샙니다. 감압 TEST기와 수압 TEST기로 기밀을 직접 확인합니다.</p></div>
    <div><b><i>⚙️</i>금형 · 사형 둘 다</b><p>수량이 많고 정밀하면 금형주조, 크거나 모양이 복잡하면 사형주조. 부품에 맞는 공법을 같이 골라 드립니다.</p></div>
-   <div><b><i>🏭</i>38년 한 우물</b><p>1988년 창업 이래 알루미늄 중력주조만 했습니다. 유망중소기업 지정, ISO 9001 인증.</p></div>
+   <div><b><i>🏭</i>38년 한 우물</b><p>1988년 창업 이래 알루미늄 중력주조만 했습니다. 유망중소기업 지정, ISO 9001 · CLEAN 사업장 인증 이력.</p></div>
   </div>
  </div>
 </div></section>
@@ -299,9 +306,17 @@ html,body{overflow-x:hidden}.eqc{padding-right:64px!important}.eqc span{display:
   <div><b>2002</b><p>팔용동 본점 · 삼흥테크(주)로 상호 변경</p></div>
   <div><b>2003</b><p>QS 9000 인증</p></div>
   <div><b>2007</b><p>ISO 9001 인증 (KMAR)</p></div>
+  <div><b>2010</b><p>CLEAN 사업장 인정 (노동부)</p></div>
   <div class="h"><b>2026</b><p>38년째, 알루미늄 중력주조</p></div>
  </div>
- <div class="certs"><span>🏅 ISO 9001 · KS A 9001</span><span>🏅 유망중소기업 지정</span><span>🏅 무역업 허가</span></div>
+ <div class="cg2"><button class="cc2" data-cert="0"><span style="background-image:url(img/cert_iso.jpg)"></span><b>품질경영시스템 인증서</b><small>ISO 9001 · KS A 9001 · 2007</small></button><button class="cc2" data-cert="1"><span style="background-image:url(img/cert_yu.jpg)"></span><b>유망중소기업 지정서</b><small>한국기계연구소 · 1990</small></button><button class="cc2" data-cert="2"><span style="background-image:url(img/cert_trade.jpg)"></span><b>무역업 허가증</b><small>경상남도 · 1989</small></button><button class="cc2" data-cert="3"><span style="background-image:url(img/cert_clean.jpg)"></span><b>CLEAN 사업장 인정서</b><small>노동부 · 2010</small></button></div>
+</div></section>
+
+<section id="board" class="alt"><div class="w">
+ <div class="sh" style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap"><div><span class="k">ESTIMATE BOARD</span><h2>견적 문의 게시판</h2><p>지금까지 <b>54건</b>의 견적 문의가 들어왔어요. 모든 글은 비밀글로 보호돼요.</p></div><button class="btn" data-open="q">📐 견적 문의하기</button></div>
+ <div class="bd2"><div class="bt"><button class="on" data-bt="e">견적문의 54</button><button data-bt="q">질문게시판</button><button data-bt="n">공지사항</button></div>
+ <table class="bdt"><thead><tr><th>번호</th><th>제목</th><th>글쓴이</th><th>날짜</th></tr></thead><tbody id="bdb"><tr><td>54</td><td class="tt"><button data-lock>🔒 견적문의드립니다.</button></td><td>이*미</td><td>2026-03-11</td></tr><tr><td>53</td><td class="tt"><button data-lock>🔒 풍동 시험용 에어포일 제작 문의 관련 건 <em>답변 완료</em></button></td><td>김*</td><td>2025-10-20</td></tr><tr><td>52</td><td class="tt"><button data-lock>🔒 견적문의</button></td><td>서*원</td><td>2025-08-29</td></tr><tr><td>51</td><td class="tt"><button data-lock>🔒 제품제작 견적문의의 건</button></td><td>정*하</td><td>2025-03-20</td></tr><tr><td>50</td><td class="tt"><button data-lock>🔒 견적의뢰 요청드립니다.</button></td><td>박*철</td><td>2025-02-10</td></tr><tr><td>49</td><td class="tt"><button data-lock>🔒 중력주조 부품 제작 견적</button></td><td>유**밀</td><td>2025-02-05</td></tr><tr><td>48</td><td class="tt"><button data-lock>🔒 견적 문의 드립니다.</button></td><td>지***</td><td>2024-12-23</td></tr><tr><td>47</td><td class="tt"><button data-lock>🔒 견적의뢰</button></td><td>(주)대**크</td><td>2024-10-25</td></tr><tr><td>46</td><td class="tt"><button data-lock>🔒 주조 바닥패널 제작검토 및 견적요청의 건</button></td><td>하*연</td><td>2024-04-25</td></tr><tr><td>45</td><td class="tt"><button data-lock>🔒 Sand Casting (RFQ) 검토 및 견적 요청</button></td><td>김 *수</td><td>2024-02-23</td></tr></tbody></table>
+ <p class="bdn">※ 시안 화면이에요 · 실제 사이트에서는 기존 게시글 54건을 그대로 옮겨 드려요 · 글쓴이 이름은 가려서 표시</p></div>
 </div></section>
 
 <section><div class="w">
@@ -365,7 +380,7 @@ const V={
  <button class="btn" id="aigo" style="justify-content:center">결과 보기 →</button>
  <div class="air" id="air"></div></div>`,
  eqall:()=>`<h3>전체 설비 목록</h3><p class="sub">2026년 기존 홈페이지 기준</p><table class="eqt"><tr><th>설비</th><th>특성</th><th>용량</th><th>대수</th></tr>${EQ.map(r=>`<tr>${r.map(c=>`<td>${c||'-'}</td>`).join('')}</tr>`).join('')}</table>`,
- ba:()=>`<h3>지금 홈페이지 vs 새 홈페이지</h3><p class="sub">거래처가 처음 검색해서 들어왔을 때 보는 화면이에요.</p><div class="ba"><figure><img src="img/before.jpg" alt="지금 홈페이지"><figcaption>지금 홈페이지</figcaption><ul class="bad"><li>주소창에 <b>"주의 요함"</b> 보안 경고</li><li>휴대폰에서 글씨가 작고 화면이 잘림</li><li>글자가 그림이라 <b>검색에 거의 안 잡힘</b></li><li>"25년 노하우" → 실제로는 38년</li></ul></figure><figure><img src="img/after.jpg" alt="새 홈페이지 시안"><figcaption>새 홈페이지 (이 시안)</figcaption><ul class="good"><li>휴대폰 · PC 모두 깔끔하게</li><li>제품을 카탈로그처럼 고급스럽게</li><li>공정 8단계 · 기밀 시험으로 신뢰</li><li>도면 첨부 견적이 바로 들어옴</li></ul></figure></div>
+ ba:()=>`<h3>지금 홈페이지 vs 새 홈페이지</h3><p class="sub">거래처가 처음 검색해서 들어왔을 때 보는 화면이에요.</p><div class="ba"><figure><img src="img/before.jpg" alt="지금 홈페이지"><figcaption>지금 홈페이지</figcaption><ul class="bad"><li>주소창에 <b>"주의 요함"</b> 보안 경고</li><li>휴대폰에서 글씨가 작고 화면이 잘림</li><li>글자가 그림이라 <b>검색에 거의 안 잡힘</b></li><li>"25년 노하우" → 실제로는 38년</li><li><b>견적 게시판</b>: 지금까지 문의 54건 — 게시판에 직접 들어가 봐야 해서 <b>새 문의를 놓치기 쉬움</b></li></ul></figure><figure><img src="img/after.jpg" alt="새 홈페이지 시안"><figcaption>새 홈페이지 (이 시안)</figcaption><ul class="good"><li>휴대폰 · PC 모두 깔끔하게</li><li>제품을 카탈로그처럼 고급스럽게</li><li>공정 8단계 · 기밀 시험으로 신뢰</li><li>도면 첨부 견적 → <b>담당자 휴대폰 · 메일로 즉시 알림</b> (로그인 없이 1분)</li><li>견적 게시판도 그대로 · 비밀글로 안전하게</li></ul></figure></div>
  <figure style="margin:18px 0 0"><img src="img/compare_m.jpg" alt="휴대폰 비교" style="border-radius:14px;border:1px solid var(--ln)"><figcaption style="font-weight:800;margin-top:8px">📱 거래처 대부분은 휴대폰으로 먼저 봐요</figcaption></figure>
  <div class="offer"><b>이대로 쓰시려면</b><ul><li>회사 도메인 연결 + 보안(https) + 네이버 · 구글 검색 등록</li><li>제품 · 공장 사진 최신화 (찍어 주시면 다듬어 드려요)</li><li>영어 · 일본어 페이지 완성 (해외 거래처용 · 이 시안에 맛보기 포함)</li><li>AI 주조 가능성 체크 · 도면 견적 접수 → 담당자 휴대폰으로 바로 알림</li></ul><p style="margin:8px 0 0;font-size:13.5px;color:var(--mu)">찰칵홈 · 문의는 소개해 주신 분께 편하게 말씀해 주세요.</p></div>`,
  q:()=>{qd={kind:'',mat:'',w:'',vol:'',post:[],file:'',co:'',nm:'',tel:'',msg:''};return `<h3>📐 견적 문의</h3><p class="sub">3단계 · 1분이면 끝나요</p><div class="qs"><span class="on">1 부품</span><span>2 수량 · 도면</span><span>3 연락처</span></div>
@@ -407,4 +422,8 @@ function qwire(){const go=n=>{C.querySelectorAll('.qp').forEach(p=>p.hidden=+p.d
  ja:{ey:'<i></i>1988年創業 · アルミ重力鋳造専門',h1:'38年、<br><em>漏れない</em><br>アルミ部品。',hp:'クランクケース・シリンダーブロック・ポンプボディを金型・砂型の重力鋳造で製造し、減圧・水圧の気密試験まで自社で検査して納品します。',b1:'📐 図面でお見積り',b2:'⚡ 30秒 鋳造可否チェック',cap:'写真：三興テック製クランクケース',nq:'お見積り',ph:'こんな部品なら、三興テックへ',ah:'三興テックの部品が使われる場所'}};
  const ko={};document.querySelectorAll('[data-t]').forEach(e=>ko[e.dataset.t]=e.innerHTML);
  document.addEventListener('click',e=>{const b=e.target.closest('[data-lg]');if(!b)return;const L=b.dataset.lg;document.querySelectorAll('[data-lg]').forEach(x=>x.classList.toggle('on',x===b));document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(el=>{const v=L==='ko'?ko[el.dataset.t]:T[L][el.dataset.t];if(v)el.innerHTML=v})});})()</script>
+<script>(()=>{const B=document.getElementById('bdb'),E=B.innerHTML;const Q='<tr><td>12</td><td class="tt"><button data-lock>🔒 AC4C 재질 T6 열처리 가능 여부</button></td><td>최**</td><td>2025-06-02</td></tr><tr><td>11</td><td class="tt"><button data-lock>🔒 사형주조 최소 두께 문의</button></td><td>한**</td><td>2024-11-14</td></tr>',N='<tr><td>3</td><td class="tt"><button data-lock="0">📢 하계 휴무 안내</button></td><td>관리자</td><td>2025-07-25</td></tr><tr><td>2</td><td class="tt"><button data-lock="0">📢 설 연휴 휴무 안내</button></td><td>관리자</td><td>2025-01-20</td></tr>';
+document.addEventListener('click',e=>{const t=e.target.closest('[data-bt]');if(t){document.querySelectorAll('[data-bt]').forEach(x=>x.classList.toggle('on',x===t));B.innerHTML=t.dataset.bt==='e'?E:t.dataset.bt==='q'?Q:N;return}
+ const l=e.target.closest('[data-lock]');if(l){const M=document.getElementById('md'),C=document.getElementById('mc');C.innerHTML=l.dataset.lock==='0'?'<h3>📢 공지사항</h3><p class="sub">시안용 예시 공지예요.</p>':'<h3>🔒 비밀글이에요</h3><p class="sub">작성자와 담당자만 볼 수 있어요. 새 견적이 필요하시면 아래 버튼을 눌러 주세요.</p><button class="btn" data-open="q">📐 견적 문의하기</button>';M.hidden=false;document.body.style.overflow='hidden'}})})()</script>
+<script>document.addEventListener('click',e=>{const c=e.target.closest('[data-cert]');if(!c)return;const f=['cert_iso','cert_yu','cert_trade','cert_clean'][+c.dataset.cert];const M=document.getElementById('md'),C=document.getElementById('mc');C.innerHTML=`<h3>${c.querySelector('b').textContent}</h3><p class="sub">${c.querySelector('small').textContent}</p><img src="img/${f}.jpg" alt="" style="max-height:70vh;margin:0 auto;border:1px solid var(--ln);border-radius:8px">`;M.hidden=false;document.body.style.overflow='hidden'})</script>
 </body></html>
